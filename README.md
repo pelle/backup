@@ -165,6 +165,29 @@ Since it's a simple command line utility, just write a cron to invoke it wheneve
     end
 
 
+Documentation
+-------------
+
+See the [Wiki Pages](https://github.com/meskyanichi/backup/wiki). The subjects labeled **without** the "Backup 2)"-prefix are meant for Backup 3 users.
+
+
+Suggestions, Bugs, Requests, Questions
+--------------------------------------
+
+View the [issue log](https://github.com/meskyanichi/backup/issues) and post them there.
+
+
+Want to contribute?
+-------------------
+
+- Fork/Clone the **develop** branch
+- Write RSpec tests, and test against:
+  - Ruby 1.9.2
+  - Ruby 1.8.7
+  - Ruby Enterprise Edition 1.8.7
+- Try to keep the overall *structure / design* of the gem the same
+
+I can't guarantee I'll pull every pull request. Also, I may accept your pull request and drastically change parts to improve readability/maintainability. Feel free to discuss about improvements, new functionality/features in the [issue log](https://github.com/meskyanichi/backup/issues) before contributing if you need/want more information.
 
 
 Backup 2 - Issues, Wiki, Source, Gems
