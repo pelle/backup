@@ -23,6 +23,7 @@ To get the latest *build* of the latest stable version
 
 Builds **aim** to be stable, but cannot guarantee it. Builds tend to be released a lot more frequent than the stable versions. So if you want to live on the edge and want the latest improvements, install the build gems.
 
+You can view the list of released versions over at [RubyGems.org (Backup)](https://rubygems.org/gems/backup/versions)
 
 **Below you find a summary of what the Backup gem currently supports. Each of the items below is more or less completely isolated from each other, meaning that adding new databases, storage locations, compressors, encryptors, notifiers, and such is relatively easy to do.**
 
