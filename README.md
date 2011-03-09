@@ -187,7 +187,7 @@ That's it.
 Since it's a simple command line utility, just write a cron to invoke it whenever you want. I recommend you use the [Whenever Gem](https://github.com/javan/whenever) to manage your cron tasks. It'll enable you to write such elegant automatic backup syntax in Ruby:
 
     every 6.hours do
-      run "backup perform -t sample_backup"
+      command "backup perform -t sample_backup"
     end
 
 
