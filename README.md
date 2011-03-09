@@ -7,6 +7,7 @@ Author
 ------
 
 Michael van Rooijen ( [@meskyanichi](http://twitter.com/#!/meskyanichi) )
+
 Drop me a message for any questions, suggestions, requests, bugs or submit them to the [issue log](https://github.com/meskyanichi/backup/issues).
 
 Installation
