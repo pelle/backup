@@ -39,11 +39,15 @@ Database Support
 - MongoDB
 - Redis
 
+[Database Wiki Page](https://github.com/meskyanichi/backup/wiki/Databases)
+
 Filesystem Support
 ------------------
 
 - Files
 - Folders
+
+[Archive Wiki Page](https://github.com/meskyanichi/backup/wiki/Archives)
 
 Storage Locations
 -----------------
@@ -52,6 +56,8 @@ Storage Locations
 - Rackspace Cloud Files (Mosso)
 - Dropbox
 - Remote Servers *(Available Protocols: FTP, SFTP, SCP and RSync)*
+
+[Storage Wiki Page](https://github.com/meskyanichi/backup/wiki/Storages)
 
 Storage Features
 ----------------
@@ -64,10 +70,14 @@ Storage Features
 - Incremental Backups, applies to:
   - Remote Servers *(Only Protocols: RSync)*
 
+[Storage Wiki Page](https://github.com/meskyanichi/backup/wiki/Storages)
+
 Compressors
 -----------
 
 - Gzip
+
+[Compressors Wiki Page](https://github.com/meskyanichi/backup/wiki/Compressors)
 
 Encryptors
 ----------
@@ -75,10 +85,14 @@ Encryptors
 - OpenSSL
 - GPG
 
+[Encryptors Wiki Page](https://github.com/meskyanichi/backup/wiki/Encryptors)
+
 Notifiers
 ---------
 
 - Mail
+
+[Notifiers Wiki Page](https://github.com/meskyanichi/backup/wiki/Notifiers)
 
 Supported Ruby versions (Tested with RSpec)
 -------------------------------------------
