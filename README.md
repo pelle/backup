@@ -25,7 +25,11 @@ Builds **aim** to be stable, but cannot guarantee it. Builds tend to be released
 
 You can view the list of released versions over at [RubyGems.org (Backup)](https://rubygems.org/gems/backup/versions)
 
-**Below you find a summary of what the Backup gem currently supports. Each of the items below is more or less completely isolated from each other, meaning that adding new databases, storage locations, compressors, encryptors, notifiers, and such is relatively easy to do.**
+
+What Backup 3 currently supports
+================================
+
+**Below you find a summary of what the Backup gem currently supports. Each of the items below is more or less isolated from each other, meaning that adding new databases, storage locations, compressors, encryptors, notifiers, and such is relatively easy to do.**
 
 Database Support
 ----------------
@@ -91,7 +95,7 @@ Backup **3** runs in **UNIX**-based operating systems: Linux, Mac OSX, etc. It d
 Compatibility
 -------------
 
-Backup **3** is NOT compatible with Backup **2**. The whole command line interface has changed. The DSL has changed. All for the better.
+Backup **3** is **NOT** backwards compatible with Backup **2**. The whole command line interface has changed. The DSL has changed. All for the better.
 
 
 A sample "Backup" configuration file
