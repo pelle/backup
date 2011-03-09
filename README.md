@@ -95,7 +95,7 @@ Backup **3** runs in **UNIX**-based operating systems: Linux, Mac OSX, etc. It d
 Compatibility
 -------------
 
-Backup **3** is **NOT** backwards compatible with Backup **2**. The whole command line interface has changed. The DSL has changed. All for the better.
+Backup **3** is **NOT** backwards compatible with Backup **2**. The command line interface has changed. The DSL has changed. And a lot more has changed. All for the better.
 
 
 A sample "Backup" configuration file
