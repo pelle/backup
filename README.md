@@ -118,14 +118,14 @@ Below you see a sample configuration file you could create for Backup 3. Just re
         database.only_collections = ['users', 'events', 'posts']
       end
 
-      archive :user_avatars do |avatars|
-        avatars.add '/var/apps/my_sample_app/public/avatars'
+      archive :user_avatars do |archive|
+        archive.add '/var/apps/my_sample_app/public/avatars'
       end
 
-      archive :logs do |log|
-        log.add '/var/apps/my_sample_app/logs/production.log'
-        log.add '/var/apps/my_sample_app/logs/newrelic_agent.log'
-        log.add '/var/apps/my_sample_app/logs/other.log'
+      archive :logs do |archive|
+        archive.add '/var/apps/my_sample_app/logs/production.log'
+        archive.add '/var/apps/my_sample_app/logs/newrelic_agent.log'
+        archive.add '/var/apps/my_sample_app/logs/other.log'
       end
 
       encrypt_with OpenSSL do |encryption|
@@ -159,7 +159,7 @@ Below you see a sample configuration file you could create for Backup 3. Just re
 
 ### Explanation for the above example
 
-First it dumps all the tables inside the MySQL database "my_sample_mysql_db", except for the "logs" table. It also dumps the MongoDB database "my_sample_mongo_db", but only the collections "users", "events" and "posts". After that it'll create a "user_avatars.tar" archive with all the uploaded avatars of the users. After that it'll create a "logs.tar" archive with the "production.log", "newrelic_agent.log" and "other.log" logs. After that it'll encrypt the whole backup file (everything included: databases, archives) using "OpenSSL". Now the Backup can only be extracted when you know the password to decrypt it ("my_secret_password" in this case). After that it'll compress the backup file using Gzip (with the mode set to "best", rather than "fast" for best compression). Then it'll store the backup file to Amazon S3 in to 'my_bucket/backups'. Next it'll also transfer a copy of the backup file to a remote server using the RSync protocol, and it'll be stored in to the "$HOME/backups/" path on this server. Finally, it'll notify me by email if the backup raises an error/exception during the process indicating that something went wrong.
+First it dumps all the tables inside the MySQL database "my_sample_mysql_db", except for the "logs" table. It also dumps the MongoDB database "my_sample_mongo_db", but only the collections "users", "events" and "posts". After that it'll create a "user_avatars.tar" archive with all the uploaded avatars of the users. After that it'll create a "logs.tar" archive with the "production.log", "newrelic_agent.log" and "other.log" logs. After that it'll encrypt the whole backup file (everything included: databases, archives) using "OpenSSL". Now the Backup can only be extracted when you know the password to decrypt it ("my_secret_password" in this case). After that it'll compress the backup file using Gzip (with the mode set to "best", rather than "fast" for best compression). Then it'll store the backup file to Amazon S3 in to 'my_bucket/backups'. Next it'll also transfer a copy of the backup file to a remote server using the RSync protocol, and it'll be stored in to the "$HOME/backups/" path on this server. Finally, it'll notify me by email if the backup raises an error/exception during the process indicating that something went wrong. (When setting `mail.on_success = true` it'll also notify you of every successful backup)
 
 ### Things to note
 
